@@ -11,6 +11,7 @@ module.exports = {
       grotesk: ["Cy Grotesk Grand Bold"],
       mabry: ["Mabry Pro"],
     },
+    
   },
   plugins: [],
 };
