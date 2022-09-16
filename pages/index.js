@@ -15,10 +15,18 @@ export default function Home() {
           <EventCard bgColor={"#BBF6A7"} image="/blocks.svg" />
         </div>
         <div className="flex h-[58vh] my-2">
-          <EventLink title="COOK OFF" hoverColor="#FF4C38" />
-          <EventLink title="TECH TALKS" hoverColor="#FDC62E" />
-          <EventLink title="INDUSTREALITY" hoverColor="#3860FF" />
-          <EventLink title="HASHTECH" hoverColor="#2FAB5A" />
+          <EventLink title="COOK OFF" hoverColor="#FF4C38" link={"cookoff"} />
+          <EventLink
+            title="TECH TALKS"
+            hoverColor="#FDC62E"
+            link={"techtalks"}
+          />
+          <EventLink
+            title="INDUSTREALITY"
+            hoverColor="#3860FF"
+            link={"industreality"}
+          />
+          <EventLink title="HASHTECH" hoverColor="#2FAB5A" link={"hashtech"} />
         </div>
       </section>
     </div>
