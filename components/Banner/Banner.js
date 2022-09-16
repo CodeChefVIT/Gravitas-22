@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import GroupPic from "../GroupPic/GroupPic";
 function Banner() {
   return (
     <div className="flex h-[87vh] mt-[12vh]  ">
@@ -14,12 +15,17 @@ function Banner() {
           <Image src={"/ellipse.svg"} alt="" layout="fill" />
         </div>
 
-        <div className="text-5xl sm:text-6xl md:text-7xl font-grotesk font-extrabold mb-5">
+        <div className="text-5xl sm:text-6xl md:text-[90px] font-grotesk font-extrabold mb-5">
           <h1 className="stroked-grey ">GRAVITAS</h1>
           <h1 className="stroked">GRAVITAS</h1>
           <h1 className="">GRAVITAS</h1>
         </div>
-        <button href="#" className="bg-blacks absolute bottom-[15%]">
+        <button
+          className="bg-blacks absolute bottom-[15%]"
+          onClick={() => {
+            location.href = "#events";
+          }}
+        >
           <div className="font-mudclaw p-[20px] bg-[#FDFF7C] border-[2px] border-black rounded-full shadowed flex items-center justify-center text-sm sm:text-md md:text-lg">
             <p className="mx-2">Explore Events</p>
             <span className="relative mx-2 h-[15px] w-[15px]">
@@ -28,7 +34,9 @@ function Banner() {
           </div>
         </button>
       </div>
-      <div className="flex-[0.8] max-w-[800px] hidden lg:block bg-[#B7DCEF] border-l-2 border-b-2 border-black"></div>
+      <div className="flex-[0.8] lg:flex items-center justify-center max-w-[800px] hidden lg:block bg-[#B7DCEF] border-l-2 border-b-2 border-black">
+        <GroupPic />
+      </div>
     </div>
   );
 }
