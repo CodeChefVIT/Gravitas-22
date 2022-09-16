@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       mudclaw: ["Mudclaw"],
       grotesk: ["Cy Grotesk Grand Bold"],
+      mabry: ["Mabry Pro"],
     },
   },
   plugins: [],

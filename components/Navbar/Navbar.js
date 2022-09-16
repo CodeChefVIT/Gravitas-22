@@ -10,11 +10,11 @@ export default function Navbar() {
       </div>
 
       <div className="h-full font-mudclaw flex-1 flex items-center justify-evenly text-sm md:text-lg">
-        <Link href={"#banner"}>Home</Link>
-        <Link href={"#events"}>Events</Link>
-        <Link href={"#events"}>Sponsors</Link>
+        <Link href={"#banner"}>HOME</Link>
+        <Link href={"#events"}>EVENTS</Link>
+        <Link href={"#events"}>SPONSORS</Link>
 
-        <Link href={"#"}>Contact</Link>
+        <Link href={"#"}>CONTACT</Link>
       </div>
       <div className="h-[70%] w-[15vw] hidden md:flex items-center justify-center relative mr-5">
         <Image
