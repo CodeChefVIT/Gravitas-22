@@ -1,4 +1,24 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .stroked {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+  }
+  .stroked-grey {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    color: transparent;
+  }
+  .shadowed {
+    box-shadow: 8.64103px 8.64103px 0px #000000;
+  }
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +33,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
