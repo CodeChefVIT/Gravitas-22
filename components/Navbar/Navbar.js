@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-export default function Navbar({ focus }) {
+export default function Navbar({ focus, changeFocus }) {
   return (
     <div className="fixed z-10 bg-white top-0 left-0 w-[100vw] h-[12vh] border-b-2 border-black flex items-center">
       <div className="border-black border-r-2 h-full items-center justify-center aspect-square hidden sm:flex">
@@ -17,6 +17,7 @@ export default function Navbar({ focus }) {
             padding: focus === "banner" ? "10px" : "0",
           }}
           className="rounded-[50%] transition-all"
+          onClick={() => changeFocus("banner")}
         >
           <Link href={"#banner"}>HOME</Link>
         </div>
@@ -26,6 +27,7 @@ export default function Navbar({ focus }) {
             padding: focus === "events" ? "10px" : "0",
           }}
           className="rounded-[50%] transition-all"
+          onClick={() => changeFocus("events")}
         >
           <Link href={"#events"}>EVENTS</Link>
         </div>
@@ -35,6 +37,7 @@ export default function Navbar({ focus }) {
             padding: focus === "sponsors" ? "10px" : "0",
           }}
           className="rounded-[50%] transition-all"
+          onClick={() => changeFocus("sponsors")}
         >
           <Link href={"#sponsors"}>SPONSORS</Link>
         </div>
@@ -45,6 +48,7 @@ export default function Navbar({ focus }) {
             padding: focus === "footer" ? "10px" : "0",
           }}
           className="rounded-[50%] transition-all"
+          onClick={() => changeFocus("footer")}
         >
           <Link href={"#footer"}>CONTACT</Link>
         </div>

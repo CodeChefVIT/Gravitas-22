@@ -4,7 +4,7 @@ import EventCard from "../components/EventCard/EventCard";
 import EventLink from "../components/EventLink/EventLink";
 import SocialLink from "../components/SocialLink/SocialLink";
 import Navbar from "../components/Navbar/Navbar";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 export default function Home() {
   const homeRef = useRef(null);
@@ -50,10 +50,20 @@ export default function Home() {
 
   return (
     <>
-      <Navbar focus={inFocus} />
+      <Navbar
+        focus={inFocus}
+        changeFocus={useCallback(
+          (val) => {
+            setInFocus(val);
+          },
+          [setInFocus]
+        )}
+      />
       <div className="home_page">
         <section id="banner" ref={homeRef}>
-          <Banner focusEvents={() => setInFocus("events")} />
+          <Banner
+            focusEvents={useCallback(() => setInFocus("events"), [setInFocus])}
+          />
         </section>
         <section id="events" ref={eventsRef}>
           <div className="w-[90vw] m-auto flex items-center justify-between my-2">
