@@ -5,20 +5,21 @@ import EventLink from "../components/EventLink/EventLink";
 import SocialLink from "../components/SocialLink/SocialLink";
 import Navbar from "../components/Navbar/Navbar";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 export default function Home() {
   const homeRef = useRef(null);
   const eventsRef = useRef(null);
   const sponsorsRef = useRef(null);
   const footerRef = useRef(null);
   const [inFocus, setInFocus] = useState("banner");
-
+  const router = useRouter();
   useEffect(() => {
-    if (location.href.indexOf("/#") === -1) {
+    if (router.pathname.indexOf("/#") === -1) {
       setInFocus("banner");
     } else {
-      setInFocus(location.href.split("/#")[1]);
+      setInFocus(router.pathname.split("/#")[1]);
     }
-  }, [location.href]);
+  }, [router.pathname]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
