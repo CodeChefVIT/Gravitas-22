@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GroupPic from "../GroupPic/GroupPic";
-function Banner() {
+function Banner({ focusEvents }) {
   return (
     <div className="flex h-[87vh] mt-[12vh]  ">
       <div className="flex-1 relative flex items-center justify-center flex-col">
@@ -23,6 +23,7 @@ function Banner() {
         <button
           className="bg-blacks absolute bottom-[15%]"
           onClick={() => {
+            focusEvents();
             location.href = "#events";
           }}
         >

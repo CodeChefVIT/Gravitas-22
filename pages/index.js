@@ -14,7 +14,7 @@ export default function Home() {
   const [inFocus, setInFocus] = useState("banner");
   const router = useRouter();
   useEffect(() => {
-    console.log(router.asPath);
+    console.log(router.asPath.split("/#")[1]);
     if (router.asPath.indexOf("/#") === -1) {
       setInFocus("banner");
     } else {
@@ -53,7 +53,7 @@ export default function Home() {
       <Navbar focus={inFocus} />
       <div className="home_page">
         <section id="banner" ref={homeRef}>
-          <Banner />
+          <Banner focusEvents={() => setInFocus("events")} />
         </section>
         <section id="events" ref={eventsRef}>
           <div className="w-[90vw] m-auto flex items-center justify-between my-2">
