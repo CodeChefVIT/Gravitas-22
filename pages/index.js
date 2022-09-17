@@ -14,12 +14,13 @@ export default function Home() {
   const [inFocus, setInFocus] = useState("banner");
   const router = useRouter();
   useEffect(() => {
-    if (router.pathname.indexOf("/#") === -1) {
+    console.log(router.asPath);
+    if (router.asPath.indexOf("/#") === -1) {
       setInFocus("banner");
     } else {
-      setInFocus(router.pathname.split("/#")[1]);
+      setInFocus(router.asPath.split("/#")[1]);
     }
-  }, [router.pathname]);
+  }, [router.asPath]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
