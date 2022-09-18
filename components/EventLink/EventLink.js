@@ -8,7 +8,7 @@ function EventLink({ hoverColor, title, link }) {
   return (
     <div
       style={{ backgroundColor: hovering ? hoverColor : "" }}
-      className={`font-mudclaw bg-[#FFFFF4] flex items-center justify-center flex-1 w-[25vw]  last-of-type:border-r-0 border-r-[1px] border-t-[1px] border-b-[1px] border-black transition-all`}
+      className={`font-mudclaw bg-[#FFFFF4] flex items-center justify-center flex-1 w-[25vw]  last-of-type:border-r-0 border-r-[1px] border-t-[1px] border-b-[1px] border-black transition-all cursor-pointer`}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
       onClick={() => router.push(link)}
