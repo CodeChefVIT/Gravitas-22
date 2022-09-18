@@ -4,6 +4,7 @@ import EventCard from "../components/EventCard/EventCard";
 import EventLink from "../components/EventLink/EventLink";
 import SocialLink from "../components/SocialLink/SocialLink";
 import Navbar from "../components/Navbar/Navbar";
+import pages_config from "../pages_config.json";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 export default function Home() {
@@ -66,27 +67,31 @@ export default function Home() {
           />
         </section>
         <section id="events" ref={eventsRef}>
-          <div className="w-[90vw] m-auto flex items-center justify-between my-2">
+          <div className="w-[90vw] m-auto flex items-center justify-between my-6">
             <EventCard bgColor={"#F8A1A1"} image="/chef_hat.svg" />
             <EventCard bgColor={"#F7DD9B"} image="/mic.svg" />
             <EventCard bgColor={"#85BFEA"} image="/robotic_arm.svg" />
             <EventCard bgColor={"#BBF6A7"} image="/blocks.svg" />
           </div>
           <div className="flex h-[58vh] my-2">
-            <EventLink title="COOK OFF" hoverColor="#FF4C38" link={"cookoff"} />
+            <EventLink
+              title="COOK OFF"
+              hoverColor={pages_config["cookoff"].accent}
+              link={"cookoff"}
+            />
             <EventLink
               title="TECH TALKS"
-              hoverColor="#FDC62E"
+              hoverColor={pages_config["techtalks"].accent}
               link={"techtalks"}
             />
             <EventLink
               title="INDUSTREALITY"
-              hoverColor="#3860FF"
+              hoverColor={pages_config["industreality"].accent}
               link={"industreality"}
             />
             <EventLink
               title="HASHTECH"
-              hoverColor="#2FAB5A"
+              hoverColor={pages_config["hashtech"].accent}
               link={"hashtech"}
             />
           </div>

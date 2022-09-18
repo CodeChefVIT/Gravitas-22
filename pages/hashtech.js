@@ -1,5 +1,11 @@
+import Navbar from "../components/Navbar/Navbar";
+
 function hashtech() {
-  return <div></div>;
+  return (
+    <>
+      <Navbar focus={""} changeFocus={() => {}} />
+    </>
+  );
 }
 
 export default hashtech;

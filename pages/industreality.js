@@ -1,5 +1,11 @@
+import Navbar from "../components/Navbar/Navbar";
+
 function industreality() {
-  return <div></div>;
+  return (
+    <>
+      <Navbar focus={""} changeFocus={() => {}} />
+    </>
+  );
 }
 
 export default industreality;

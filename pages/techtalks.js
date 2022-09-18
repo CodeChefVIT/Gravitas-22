@@ -1,5 +1,11 @@
+import Navbar from "../components/Navbar/Navbar";
+
 function TechTalks() {
-  return <div>Enter</div>;
+  return (
+    <>
+      <Navbar focus={""} changeFocus={() => {}} />
+    </>
+  );
 }
 
 export default TechTalks;

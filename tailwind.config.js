@@ -10,8 +10,8 @@ module.exports = {
       mudclaw: ["Mudclaw"],
       grotesk: ["Cy Grotesk Grand Bold"],
       mabry: ["Mabry Pro"],
+      plex: ["IBM Plex Mono", "monospace"],
     },
-    
   },
   plugins: [],
 };

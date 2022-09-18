@@ -1,5 +1,8 @@
+import EventPage from "../components/EventPage/EventPage";
+import Navbar from "../components/Navbar/Navbar";
+
 function cookoff() {
-  return <div></div>;
+  return <EventPage accent="#"/>;
 }
 
 export default cookoff;
