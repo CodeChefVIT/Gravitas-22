@@ -16,6 +16,9 @@
   .shadowed {
     box-shadow: 8.64103px 8.64103px 0px #000000;
   }
+  .shadowed_lg {
+    box-shadow: 10.64103px 10.64103px 0px #000000;
+  }
   .shadowed_sm {
     box-shadow: 4.64103px 4.64103px 0px #000000;
   }

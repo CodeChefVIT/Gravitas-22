@@ -67,7 +67,7 @@ export default function Home() {
           />
         </section>
         <section id="events" ref={eventsRef}>
-          <div className="w-[90vw] m-auto flex items-center justify-between my-6">
+          <div className="w-[90vw] m-auto flex items-center justify-between my-6 md:my-10">
             <EventCard bgColor={"#F8A1A1"} image="/chef_hat.svg" />
             <EventCard bgColor={"#F7DD9B"} image="/mic.svg" />
             <EventCard bgColor={"#85BFEA"} image="/robotic_arm.svg" />
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
           <div className="m-auto max-w-[1900px] w-fit h-full flex flex-col justify-end">
             <div className=" w-[90%] mx-auto flex flex-col items-center justify-center md:flex-row border-b-[1px] border-black">
-              <p className="mx-[2%] mb-5 mt-20 max-w-[1000px] text-justify">
+              <p className="mb-5 mt-20 w-[100%] whitespace-normal  flex-1 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -121,7 +121,7 @@ export default function Home() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <div className="mx-10 flex mb-5">
+              <div className=" flex-[0.3] mt-12 mx-10 mb-5 grid  items-center grid-cols-3 lg:flex">
                 <SocialLink icon={"/twitter.svg"} bgColor="#23BA69" />
                 <SocialLink icon={"/github.svg"} bgColor="#8590F2" />
                 <SocialLink icon={"/linkedin.svg"} bgColor="#F9E562" />

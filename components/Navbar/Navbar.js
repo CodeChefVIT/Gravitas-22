@@ -10,7 +10,7 @@ export default function Navbar({ focus, changeFocus }) {
         </Link>
       </div>
 
-      <div className="h-full font-mudclaw flex-1 flex items-center justify-evenly text-sm md:text-lg">
+      <div className="h-full font-mudclaw flex-1 flex items-center justify-evenly text-xs sm:text-sm md:text-lg">
         <div
           style={{
             border: focus === "banner" && "1px solid orange",
