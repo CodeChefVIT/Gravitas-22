@@ -10,7 +10,7 @@ export default function Navbar({ focus, changeFocus }) {
         </Link>
       </div>
 
-      <div className="h-full font-mudclaw flex-1 flex items-center justify-evenly text-sm md:text-lg">
+      <div className="h-full font-mudclaw flex-1 flex items-center justify-evenly text-xs sm:text-sm md:text-lg">
         <div
           style={{
             border: focus === "banner" && "1px solid orange",
@@ -19,7 +19,7 @@ export default function Navbar({ focus, changeFocus }) {
           className="rounded-[50%] transition-all"
           onClick={() => changeFocus("banner")}
         >
-          <Link href={"#banner"}>HOME</Link>
+          <Link href={"/#banner"}>HOME</Link>
         </div>
         <div
           style={{
@@ -29,7 +29,7 @@ export default function Navbar({ focus, changeFocus }) {
           className="rounded-[50%] transition-all"
           onClick={() => changeFocus("events")}
         >
-          <Link href={"#events"}>EVENTS</Link>
+          <Link href={"/#events"}>EVENTS</Link>
         </div>
         <div
           style={{
@@ -39,7 +39,7 @@ export default function Navbar({ focus, changeFocus }) {
           className="rounded-[50%] transition-all"
           onClick={() => changeFocus("sponsors")}
         >
-          <Link href={"#sponsors"}>SPONSORS</Link>
+          <Link href={"/#sponsors"}>SPONSORS</Link>
         </div>
 
         <div
@@ -50,7 +50,7 @@ export default function Navbar({ focus, changeFocus }) {
           className="rounded-[50%] transition-all"
           onClick={() => changeFocus("footer")}
         >
-          <Link href={"#footer"}>CONTACT</Link>
+          <Link href={"/#footer"}>CONTACT</Link>
         </div>
       </div>
       <div className="h-[70%] w-[15vw] hidden md:flex items-center justify-center relative mr-5">

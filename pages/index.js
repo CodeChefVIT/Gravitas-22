@@ -4,6 +4,7 @@ import EventCard from "../components/EventCard/EventCard";
 import EventLink from "../components/EventLink/EventLink";
 import SocialLink from "../components/SocialLink/SocialLink";
 import Navbar from "../components/Navbar/Navbar";
+import pages_config from "../pages_config.json";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 export default function Home() {
@@ -66,27 +67,31 @@ export default function Home() {
           />
         </section>
         <section id="events" ref={eventsRef}>
-          <div className="w-[90vw] m-auto flex items-center justify-between my-2">
+          <div className="w-[90vw] m-auto flex items-center justify-between my-6 md:my-10">
             <EventCard bgColor={"#F8A1A1"} image="/chef_hat.svg" />
             <EventCard bgColor={"#F7DD9B"} image="/mic.svg" />
             <EventCard bgColor={"#85BFEA"} image="/robotic_arm.svg" />
             <EventCard bgColor={"#BBF6A7"} image="/blocks.svg" />
           </div>
           <div className="flex h-[58vh] my-2">
-            <EventLink title="COOK OFF" hoverColor="#FF4C38" link={"cookoff"} />
+            <EventLink
+              title="COOK OFF"
+              hoverColor={pages_config["cookoff"].accent}
+              link={"cookoff"}
+            />
             <EventLink
               title="TECH TALKS"
-              hoverColor="#FDC62E"
+              hoverColor={pages_config["techtalks"].accent}
               link={"techtalks"}
             />
             <EventLink
               title="INDUSTREALITY"
-              hoverColor="#3860FF"
+              hoverColor={pages_config["industreality"].accent}
               link={"industreality"}
             />
             <EventLink
               title="HASHTECH"
-              hoverColor="#2FAB5A"
+              hoverColor={pages_config["hashtech"].accent}
               link={"hashtech"}
             />
           </div>
@@ -107,7 +112,7 @@ export default function Home() {
           </div>
           <div className="m-auto max-w-[1900px] w-fit h-full flex flex-col justify-end">
             <div className=" w-[90%] mx-auto flex flex-col items-center justify-center md:flex-row border-b-[1px] border-black">
-              <p className="mx-[2%] mb-5 mt-20 max-w-[1000px] text-justify">
+              <p className="mb-5 mt-20 w-[100%] whitespace-normal  flex-1 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -116,7 +121,7 @@ export default function Home() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <div className="mx-10 flex mb-5">
+              <div className=" flex-[0.3] mt-12 mx-10 mb-5 grid  items-center grid-cols-3 lg:flex">
                 <SocialLink icon={"/twitter.svg"} bgColor="#23BA69" />
                 <SocialLink icon={"/github.svg"} bgColor="#8590F2" />
                 <SocialLink icon={"/linkedin.svg"} bgColor="#F9E562" />
