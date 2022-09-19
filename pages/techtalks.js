@@ -1,11 +1,8 @@
+import EventPage from "../components/EventPage/EventPage";
 import Navbar from "../components/Navbar/Navbar";
 
 function TechTalks() {
-  return (
-    <>
-      <Navbar focus={""} changeFocus={() => {}} />
-    </>
-  );
+  return <EventPage event_key={"techtalks"} />;
 }
 
 export default TechTalks;

@@ -1,11 +1,8 @@
+import EventPage from "../components/EventPage/EventPage";
 import Navbar from "../components/Navbar/Navbar";
 
 function hashtech() {
-  return (
-    <>
-      <Navbar focus={""} changeFocus={() => {}} />
-    </>
-  );
+  return <EventPage event_key={"hashtech"} />;
 }
 
 export default hashtech;
