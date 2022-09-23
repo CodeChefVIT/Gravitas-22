@@ -108,7 +108,7 @@ export default function Home() {
           ref={footerRef}
         >
           <div className=" absolute w-[100px] translate-y-[-50%] left-[10vw] aspect-square">
-            <Image src="/codechef_logo.png" alt="" layout="fill" />
+            <Image src="/codechef_logo.svg" alt="" layout="fill" />
           </div>
           <div className="m-auto max-w-[1900px] w-fit h-full flex flex-col justify-end">
             <div className=" w-[90%] mx-auto flex flex-col items-center justify-center md:flex-row border-b-[1px] border-black">
