@@ -6,7 +6,7 @@ export default function Navbar({ focus, changeFocus }) {
     <div className="fixed z-10 bg-white top-0 left-0 w-[100vw] h-[12vh] border-b-2 border-black flex items-center">
       <div className="border-black border-r-2 h-full items-center justify-center aspect-square hidden sm:flex">
         <Link href={"/"}>
-          <Image src={"/codechef_logo.png"} alt="" width={80} height={80} />
+          <Image src={"/codechef_logo.svg"} alt="" width={80} height={80} />
         </Link>
       </div>
 
