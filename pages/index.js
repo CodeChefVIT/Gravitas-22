@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 import pages_config from "../pages_config.json";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 export default function Home() {
   const homeRef = useRef(null);
   const eventsRef = useRef(null);
@@ -51,6 +52,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Codechef in Gravitas 22</title>
+        <link rel="icon" href="codechef_logo.svg" />
+      </Head>
       <Navbar
         focus={inFocus}
         changeFocus={useCallback(
