@@ -126,12 +126,38 @@ export default function Home() {
                 real-world problems.
               </p>
               <div className=" flex-[0.3] mt-12 mx-10 mb-5 grid  items-center grid-cols-3 lg:flex">
-                <SocialLink icon={"/twitter.svg"} bgColor="#23BA69" />
-                <SocialLink icon={"/github.svg"} bgColor="#8590F2" />
-                <SocialLink icon={"/linkedin.svg"} bgColor="#F9E562" />
-                <SocialLink icon={"/youtube.svg"} bgColor="#FFB443" />
-                <SocialLink icon={"/instagram.svg"} bgColor="#FF5E5E" />
-                <SocialLink icon={"/attention.svg"} bgColor="#4E84F6" />
+                <SocialLink
+                  icon={"/twitter.svg"}
+                  bgColor="#23BA69"
+                  link={"https://twitter.com/codechefvit"}
+                />
+                <SocialLink
+                  icon={"/github.svg"}
+                  bgColor="#8590F2"
+                  link={"https://github.com/codechefvit"}
+                />
+                <SocialLink
+                  icon={"/linkedin.svg"}
+                  bgColor="#F9E562"
+                  link={
+                    "https://www.linkedin.com/company/codechef-vit-chapter/mycompany/"
+                  }
+                />
+                <SocialLink
+                  icon={"/youtube.svg"}
+                  bgColor="#FFB443"
+                  link={"https://www.youtube.com/codechefvit"}
+                />
+                <SocialLink
+                  icon={"/instagram.svg"}
+                  bgColor="#FF5E5E"
+                  link={"https://www.instagram.com/codechefvit/"}
+                />
+                <SocialLink
+                  icon={"/facebook.svg"}
+                  bgColor="#4E84F6"
+                  link={"https://www.facebook.com/codechefvit"}
+                />
               </div>
             </div>
             <p className="ml-[5%] my-4">
