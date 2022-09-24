@@ -35,7 +35,7 @@ function Banner({ focusEvents }) {
           </div>
         </button>
       </div>
-      <div className="flex-[0.8] lg:flex items-center justify-center max-w-[800px] hidden lg:block bg-[#B7DCEF] border-l-2 border-b-2 border-black">
+      <div className="flex-[0.8] lg:flex items-center justify-center max-w-[800px] hidden bg-[#B7DCEF] border-l-2 border-b-2 border-black">
         <GroupPic />
       </div>
     </div>

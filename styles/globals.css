@@ -36,6 +36,11 @@
   font-family: "Mabry Pro";
   src: url("../public/Mabry-Pro-Medium.ttf");
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* html,
 body {
   padding: 0;
