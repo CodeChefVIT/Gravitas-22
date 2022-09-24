@@ -2,11 +2,13 @@
   "cookoff": {
     "accent": "#FF4C38",
     "title": "CookOff",
+    "link": "https://cookoff7.vercel.app/",
     "text": "Cook off is CodeChef VIT’s flagship competitive coding event that tests the coding skills of tech enthusiasts across the country. The event provides a platform for participants to develop their competitive coding skills and test their abilities. Cook Off 7.0 will be the seventh edition through which we hope to broaden the horizons of the participants."
   },
   "techtalks": {
     "accent": "#FDC62E",
     "title": "Tech Talks",
+    "link":"https://tech-talks-3-0.vercel.app/",
     "text": "Tech talks is an offline round table discussion that promises an insight into the lives and careers of leading figures in the industry. Talking about emerging technologies, this is not just any guest lecture, but an interactive session providing students with a broader perspective on each domain covered. With speakers from different domains, blending perfectly together, we hope to surpass the success achieved in Tech talks 2.0."
   },
   "industreality": {
