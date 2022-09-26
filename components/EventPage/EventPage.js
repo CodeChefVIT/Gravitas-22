@@ -3,11 +3,16 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import EventPageNav from "./EventPageNav";
 import pages_config from "../../pages_config.json";
+import Head from "next/head";
 function EventPage({ event_key }) {
   const router = useRouter();
   const event = pages_config[event_key];
   return (
     <>
+      <Head>
+        <title>{event.title}</title>
+        <link rel="icon" href="codechef_logo.svg" />
+      </Head>
       <Navbar focus={""} changeFocus={() => {}} />
       <div className="bg-[#E7E7E7] w-[100vw] h-[88vh] absolute bottom-0 flex items-center ">
         <div className=" flex-1  flex-col justify-center items-center hidden md:flex">
