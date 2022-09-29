@@ -14,11 +14,13 @@
   "industreality": {
     "accent": "#3860FF",
     "title": "Industreality",
+    "link": "http://indusreality.codechefvit.com/",
     "text": "Indust-Reality is a seminar cum hands-on-workshop focusing on all aspects of a “Product Development Cycle”. \n\n A workshop that lightens the path for amateur coders by providing them with hands-on experience and mentoring sessions by guests who happen to be experts in their fields. Having four varied domains with an exciting problem statement and innovative approaches to a single problem, it really provides a jump start and allows people to hone their skills.\n We aspire to impart beginner to intermediate knowledge of products onto budding developers and also help the top teams get their projects vetted by experts."
   },
   "hashtech": {
     "accent": "#2FAB5A",
     "title": "Hash Tech",
+    "link": "http://hashtech.codechefvit.com/",
     "text": "HashTech is a webinar-cum-ideathon involving Blockchain experts who will impart their knowledge on intermediate Blockchain concepts and the participants will be provided with the opportunity to to pitch and get their ideas vetted by these experts."
   }
 }
