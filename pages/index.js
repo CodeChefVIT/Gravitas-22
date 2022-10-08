@@ -105,10 +105,16 @@ export default function Home() {
           <h1 className="text-3xl font-mudclaw text-[#FDC62E] text-center">
             Our Sponsors
           </h1>
-          <div className="h-[70vh] flex items-center justify-center">
-            <p className="text-xl md:text-3xl font-mudclaw">
+          <div className="min-h-[70vh] pb-10 md:pb-0 flex items-center justify-evenly flex-wrap ">
+            {/* <p className="text-xl md:text-3xl font-mudclaw">
               To Be Announced ...
-            </p>
+            </p> */}
+            <div className="relative w-[300px] h-[300px]">
+              <Image src={"/amantya.jpg"} alt="Amantya" layout="fill" />
+            </div>
+            <div className="relative w-[300px] h-[100px]">
+              <Image src={"/sponsor.jpeg"} alt="KarsunIndia" layout="fill" />
+            </div>
           </div>
         </section>
         <footer
